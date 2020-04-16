@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace LinqTutorial
 {
 
-    // Developer one
+    // Developer one file
     public class Sample
     {
         public int Id { get; set; }
