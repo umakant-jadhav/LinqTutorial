@@ -32,8 +32,8 @@ namespace LinqTutorial
     
     }
     public class DemoClass
-    { 
-    
+    {
+        public int MyProperty { get; set; }
     }
 
     public class Department
