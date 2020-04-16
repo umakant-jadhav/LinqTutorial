@@ -35,6 +35,17 @@ namespace LinqTutorial
     {
         public int MyProperty { get; set; }
         public decimal salary { get; set; }
+
+        public DemoClass(int a,decimal s)
+        {
+            MyProperty = a;
+            salary = s;
+        }
+
+        public void displayDemoClassProp()
+        {
+            Console.WriteLine("MyProperty ="+MyProperty+"  salary= "+salary);
+        }
     }
 
     public class Department
@@ -366,6 +377,8 @@ namespace LinqTutorial
             });
 
 
+            DemoClass democlass = new DemoClass(2,1000.20m);
+            democlass.displayDemoClassProp();
 
             Console.ReadLine();
 
