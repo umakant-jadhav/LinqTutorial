@@ -376,6 +376,24 @@ namespace LinqTutorial
                 Console.WriteLine("Id - " + s.Id + " Name - " + s.Name + " Salary - " + s.Salary);
             });
 
+            // it will not work without IEqualityComparer with Complex Type - Without Id
+            Console.WriteLine("\n Elements After Except (but it will not work without IEqualityComparer with Complex Type)");
+            list1.Except(sList2, new SampleComparer()).ToList<Sample>().ForEach(s =>
+            {
+                Console.WriteLine(" Name - " + s.Name + " Salary - " + s.Salary);
+            });
+
+            // salary total
+            Console.WriteLine("\n Elements After Except (but it will not work without IEqualityComparer with Complex Type)");
+            int sal = 0;
+            list1.Except(sList2, new SampleComparer()).ToList<Sample>().ForEach(s =>
+            {
+                sal = sal + s.Salary;
+
+            });
+
+            Console.WriteLine(" Salary total "+ sal);
+
 
             DemoClass democlass = new DemoClass(2,1000.20m);
             democlass.displayDemoClassProp();
