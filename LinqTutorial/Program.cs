@@ -34,6 +34,7 @@ namespace LinqTutorial
     public class DemoClass
     {
         public int MyProperty { get; set; }
+        public decimal salary { get; set; }
     }
 
     public class Department
