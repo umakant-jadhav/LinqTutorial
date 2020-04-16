@@ -27,6 +27,11 @@ namespace LinqTutorial
     
     }
 
+    public class ClassForGit
+    { 
+    
+    }
+
     public class Department
     {
         public int Id { get; set; }
