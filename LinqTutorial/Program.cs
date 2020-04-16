@@ -39,7 +39,7 @@ namespace LinqTutorial
         public DemoClass(int a,decimal s)
         {
             MyProperty = a;
-            salary = s;
+            salary = s*3;
         }
 
         public void displayDemoClassProp()
