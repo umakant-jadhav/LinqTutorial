@@ -31,6 +31,10 @@ namespace LinqTutorial
     { 
     
     }
+    public class DemoClass
+    { 
+    
+    }
 
     public class Department
     {
